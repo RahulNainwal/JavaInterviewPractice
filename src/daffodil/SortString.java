@@ -6,7 +6,7 @@ import java.util.Collections;
 
 public class SortString {
 	public static void main(String[] args) {
-		String name="RahulNainwal107";
+		String name="nmdiudf739kJDklklfiNF8320920LKNkjs";
 		char[] name1=name.toCharArray();
 		ArrayList<Character> LowerCase = new ArrayList<>();
 		ArrayList<Character> UpperCase = new ArrayList<>();
@@ -42,6 +42,17 @@ public class SortString {
 			}
 			sortedString = sortedString + UpperCase.get(i).toString();
 		}
+		char[] charArray = sortedString.toCharArray();
+		for(int i=0;i<=charArray.length-1;i++){
+			for(int j=i+1;j<charArray.length;j++){
+				if(charArray[i]>Character.toLowerCase(charArray[j])){
+					char x=charArray[i];
+					charArray[i] = charArray[j];
+					charArray[j] = x;
+				}
+			}
+		}
+		sortedString = String.copyValueOf(charArray);
 		for(int i=0;i<=Number.size()-1;i++){
 			for(int j=i+1;j<Number.size();j++){
 				if(Number.get(i)<Number.get(j)){
