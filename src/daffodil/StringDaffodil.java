@@ -6,7 +6,6 @@ import java.text.DecimalFormat;
 
 public class StringDaffodil {
 public static void main(String[] args) {
-	DecimalFormat df = new DecimalFormat("#.#");	
 	String name="prakash chandra gupta";
 	name=name.replace(" ", "");
 	int length=name.length();

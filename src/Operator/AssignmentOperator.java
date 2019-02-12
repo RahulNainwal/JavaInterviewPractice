@@ -1,0 +1,17 @@
+package Operator;
+
+public class AssignmentOperator {
+public static void main(String[] args) {
+	int a=12,b=23;
+	System.out.println(a+=b);
+	System.out.println(b-=a);
+	a+=3;//10+3  
+	System.out.println(a);  
+	a-=4;//13-4  
+	System.out.println(a);  
+	a*=2;//9*2  
+	System.out.println(a);  
+	a/=2;//18/2  
+	System.out.println(a);  
+}
+}
