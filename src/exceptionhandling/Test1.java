@@ -1,5 +1,7 @@
 package exceptionhandling;
 
+import java.io.IOException;
+
 public class Test1 {
 public static void main(String[] args) {
 	int x,y,z;
@@ -9,12 +11,15 @@ public static void main(String[] args) {
 		z = x/y;
 	}
 	catch (ArithmeticException e) {
+		
+	}
+	catch (ArithmeticException e) {  // unreachable statement
 		System.out.println(e.getMessage());
 	}
 	finally{
 		System.out.println("Fist is executed");		
 	}
-	try{
+	/*try{
 		m=10;n=0;
 		o = m/n;
 	}
@@ -23,6 +28,6 @@ public static void main(String[] args) {
 	}
 	finally{
 		System.out.println("Fist is executed");		
-	}
+	}*/
 }
 }

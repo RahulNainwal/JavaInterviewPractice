@@ -1,7 +1,7 @@
 package Interface;
 interface One1{
-	default void show(){
-		System.out.println("Within default method");
+	  default void show(){
+		System.out.println("Within default method of One1");
 	}
 	public static void data(){
 		System.out.println("within static method");

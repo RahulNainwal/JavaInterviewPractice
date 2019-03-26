@@ -1,15 +1,13 @@
-package Sorting;
+package GloballogicPractics;
 
-import java.util.Scanner;
-
-public class Merge_Sort {
+public class MergeSort {
 
 	public static void main(String args[]) {
 		int arr[] = { 43, 232, 344, 232, 65, 8, 87, 34, 2, 21 };
 		System.out.println("Given Array");
 		printArray(arr);
 
-		MergeSort ob = new MergeSort();
+		MergeSort1 ob = new MergeSort1();
 		ob.sort(arr, 0, arr.length - 1);
 
 		System.out.println("\nSorted array");
@@ -23,7 +21,7 @@ public class Merge_Sort {
 	}
 }
 
-class MergeSort {
+class MergeSort1 {
 	public void sort(int[] arr, int start, int last) {
 		if (last > start) {
 			int mid = (start + last) / 2;
